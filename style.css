@@ -91,6 +91,10 @@ button {
     font-size: 40px;
 }
 
+.paragrafo {
+    color: #fff4db;
+}
+
 /* Coloquei um hover para que mude a cor quando o cursor para em cima, com uma transição de 0.3 segundos */
 button:hover {
     background-color: #724327;
