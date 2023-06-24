@@ -33,3 +33,22 @@ converter.addEventListener("click", function () {
   } else if (medidaOrigem.value == "kelvin" && medidaSaida.value == "fahrenheit") {
   }
 });
+
+function metroCentimentro() {}
+function metroPolegada() {}
+function centimentroMetro() {}
+function centimetroPolegada() {}
+function polegadaMetro() {}
+function polegadaCentimetro() {}
+function quilogramaGrama() {}
+function quilogramaLibra() {}
+function gramaQuilograma() {}
+function gramaLibra() {}
+function libraQuilograma() {}
+function libraGrama() {}
+function celsiusFahrenheit() {}
+function celsiusKelvin() {}
+function fahrenheitCelsius() {}
+function fahrenheitKelvin() {}
+function kelvinCelsius() {}
+function kelvinFahrenheit() {}
