@@ -17,7 +17,9 @@
 <body>
     <main>
         <h1>Conversor de Unidades</h1>
-        <form class="conversor">
+        <!--  Aqui começa uma estrutura form para inicios do formulario de conversor  -->
+        <form>
+            <!-- Aqui criei um select e um label para ele, onde vai ser selecionado a primeira opção sobre o que será a categoria -->
             <label for="categoria">Categoria:</label>
             <select id="categoria">
                 <option value="">-</option>
@@ -25,7 +27,7 @@
                 <option value="peso">Peso</option>
                 <option value="temperatura">Temperatura</option>
             </select>
-
+            <!-- Aqui foi criado mais dois selects com uma unica option, para receber novas options quando uma categoria for escolhida, mas também quando for clicado sem escolher a categoria, ele vai entender como opções iguais e vai exibir o alert -->
             <label for="medidaOrigem">Unidade de origem:</label>
             <select id="medidaOrigem">
                 <option value="">-</option>
@@ -35,12 +37,12 @@
             <select id="medidaSaida">
                 <option value="">-</option>
             </select>
-
+            <!-- Aqui vem o input para receber o valor que vai ser usado nas conversões, coloquei um required para  -->
             <label for="valor">Valor:</label>
             <input type="number" id="valor" required>
-
+            <!-- O botão que vai chamar as funções com ajuda do addEventListener -->
             <button type="button" id="converter">Converter</button>
-
+            <!-- Uma div para receber o resultado -->
             <h2>Resultado:</h2>
             <div class="resultado" id="resultado"></div>
         </form>

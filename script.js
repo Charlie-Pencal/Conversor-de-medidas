@@ -1,10 +1,8 @@
-// var comprimento = ["Metros", "Centimetros", "Polegadas"];
-// var peso = ["Quilogramas", "Gramas", "Libras"];
-// var temperatura = ["Celsius", "Fahrenheit", "Kelvin"];
-
+// Foram criadas as variaveis para pegar os valores de categoria e valor que serão utilizados
 var categoriaSelecionada = document.getElementById("categoria");
 var valor = document.getElementById("valor");
 
+// Aqui utilizei o addEventListener para quando for selecionado a opção no select de categoria, ele puxar o if de acordo para que o innerHTML imprima nos selects as opçoes respectivas
 categoriaSelecionada.addEventListener("change", function () {
   if (categoriaSelecionada.value == "comprimento") {
     medidaOrigem.innerHTML = `  
@@ -36,9 +34,11 @@ categoriaSelecionada.addEventListener("change", function () {
   }
 });
 
+// Criadas as variaveis que pegam os valores dos select de entrada e saida de tipo.
 var medidaOrigem = document.getElementById("medidaOrigem");
 var medidaSaida = document.getElementById("medidaSaida");
 
+// Aqui usei o addEventListener onde quando você clica o botão ele ativa a função de acordo com o que esta selecionado na unidade de entrada e unidade de saida, com um preventDefault para impedir que a pagina atualize. Foi utilizado a estrutura if e else com a verificação do valor das variaveis de medidaOrigem e medidaSaida. Utilizei o innerHTML para que o resultado da função aparecer dentro da div resultado. No final recebendo um ultimo if para que se a condição mostrasse que a origem e a saida forem iguais, aparecer um alert para pedir para colocar medidas diferentes.
 converter.addEventListener("click", function (conv) {
   conv.preventDefault();
   if (medidaOrigem.value == "metros" && medidaSaida.value == "centimetros") {
@@ -82,6 +82,7 @@ converter.addEventListener("click", function (conv) {
   }
 });
 
+// Aqui começam as funções de conversão, onde recebe o valor como parametro, foram criadas variaveis em que armazenei o valor do valor com as operações com um return, para que a função retorne o resultado
 function metroCentimetro(valor) {
   var metroParaCentimetro = valor.value * 100;
   return metroParaCentimetro;
